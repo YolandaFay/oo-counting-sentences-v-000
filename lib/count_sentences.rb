@@ -19,7 +19,7 @@ class String
     sentence_array = self.split(/\s/)
     sentence_array.each do |word|
       if word.question? || word.sentence? || word.exclamation?
-        count=+1 
+        count+=1 
         binding.pry
       end
     end
