@@ -16,5 +16,10 @@ class String
 
   def count_sentences
     sentence_array = self.split(/\s/)
+    sentence_array.each do |word|
+      if word.question? || word.sentence? || word.exclamation?
+        count=+1 
+      end
+    end
   end
 end
